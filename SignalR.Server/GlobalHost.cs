@@ -17,6 +17,29 @@ namespace SignalR.Server
             set { _dependencyResolverAccessor = () => value; }
         }
 
+
+        /// <summary>
+        /// Gets the default <see cref="IConfigurationManager"/>
+        /// </summary>
+        public static IConfigurationManager Configuration
+        {
+            get
+            {
+                return DependencyResolver.Resolve<IConfigurationManager>();
+            }
+        }
+
+        /// <summary>
+        /// Gets the default <see cref="IConnectionManager"/>
+        /// </summary>
+        public static IConnectionManager ConnectionManager
+        {
+            get
+            {
+                return DependencyResolver.Resolve<IConnectionManager>();
+            }
+        }
+
         public static IDependencyResolver GetDependencyResolver()
         {
             return DependencyResolver;

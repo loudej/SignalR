@@ -2,9 +2,12 @@
 using System.Diagnostics;
 using System.Threading;
 using System.Web.Routing;
+using Gate;
+using Katana.Server.AspNet;
 using SignalR.Samples.Hubs.DemoHub;
 using SignalR.Samples.Raw;
 using SignalR.Samples.Streaming;
+using SignalR.Server;
 
 namespace SignalR.Hosting.AspNet.Samples
 {
@@ -32,8 +35,11 @@ namespace SignalR.Hosting.AspNet.Samples
                 }
             });
 
-            RouteTable.Routes.MapConnection<Raw>("raw", "raw/{*operation}");
-            RouteTable.Routes.MapConnection<Streaming>("streaming", "streaming/{*operation}");
+            //RouteTable.Routes.MapConnection<Raw>("raw", "raw/{*operation}");
+            //RouteTable.Routes.MapConnection<Streaming>("streaming", "streaming/{*operation}");
+            RouteTable.Routes.MapConnection<Raw>("raw", "/raw");
+            RouteTable.Routes.MapConnection<Streaming>("streaming", "/streaming");
+            RouteTable.Routes.MapHubs();
         }
     }
 }

@@ -48,7 +48,13 @@ namespace Gate
         public string Status { get; set; }
         public IDictionary<string, string[]> Headers { get; set; }
         public Encoding Encoding { get; set; }
-        public bool Buffer { get; set; }
+        
+        private bool _buffer;
+        public bool Buffer
+        {
+            get { return _buffer; }
+            set { _buffer = value; }
+        }
 
         public string GetHeader(string name)
         {

@@ -48,6 +48,9 @@
       <HintPath>..\..\packages\AntiXSS.4.0.1\lib\net35\HtmlSanitizationLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Owin, Version=0.8.0.0, Culture=neutral, PublicKeyToken=f585506a2da1fef4, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.0.8-ctp1\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Web" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
@@ -205,13 +208,17 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SignalR.Hosting.AspNet\SignalR.Hosting.AspNet.csproj">
-      <Project>{0E513AE2-BEA8-40CF-B9F2-102B351F2FB2}</Project>
-      <Name>SignalR.Hosting.AspNet</Name>
+    <ProjectReference Include="..\..\..\katana\src\Katana.Server.AspNet\Katana.Server.AspNet.csproj">
+      <Project>{E31826E6-C29A-4F08-BD4F-E17ACA793BBC}</Project>
+      <Name>Katana.Server.AspNet</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SignalR.Hosting.Common\SignalR.Hosting.Common.csproj">
-      <Project>{3B71F0AE-D4B6-4F47-BF62-333D45615673}</Project>
-      <Name>SignalR.Hosting.Common</Name>
+    <ProjectReference Include="..\..\SignalR.Routing\SignalR.Routing.csproj">
+      <Project>{D3F59F13-5430-4996-9E5E-82BC269BAD29}</Project>
+      <Name>SignalR.Routing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SignalR.Server\SignalR.Server.csproj">
+      <Project>{E6C4A35C-25CC-4374-A0FB-4955F679E833}</Project>
+      <Name>SignalR.Server</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\SignalR\SignalR.csproj">
       <Project>{1B9A82C4-BCA1-4834-A33E-226F17BE070B}</Project>
