@@ -48,6 +48,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{08B794
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.ProxyGenerator", "SignalR.ProxyGenerator\SignalR.ProxyGenerator.csproj", "{12609D9C-B4C9-4553-B364-D2C297F85CE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalR.Server", "SignalR.Server\SignalR.Server.csproj", "{E6C4A35C-25CC-4374-A0FB-4955F679E833}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -200,6 +202,16 @@ Global
 		{12609D9C-B4C9-4553-B364-D2C297F85CE7}.Release|Mixed Platforms.Build.0 = Release|x86
 		{12609D9C-B4C9-4553-B364-D2C297F85CE7}.Release|x86.ActiveCfg = Release|x86
 		{12609D9C-B4C9-4553-B364-D2C297F85CE7}.Release|x86.Build.0 = Release|x86
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E6C4A35C-25CC-4374-A0FB-4955F679E833}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
